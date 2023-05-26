@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/styles.css">
+  <link rel="stylesheet" href="./src/css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script defer src="./src/js/scripts.js"></script>
+</head>
+
+<body>
+  <main class="container">
+    <div class="info">
+      <h1 class="title">
+        Learn to code by watching others
+      </h1>
+      <p class="description">
+        See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </div>
+    <div class="form">
+      <h2 class="form-title"><strong>Try it free 7 days</strong> then $20/mo. thereafter</h2>
+
+      <form action="#">
+
+        <input  type="text" name="first-name" id="first-name" placeholder="First Name" autocomplete="off">
+        <span class="erro-message">*First name cannot be empty</span>
+        <input type="text" name="last-name" id="last-name" placeholder="Last Name" autocomplete="off">
+        <span class="erro-message">*Last name cannot be empty</span>
+        <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="off">
+        <span class="erro-message">*Looks like this not an email</span>
+        <input type="password" name="password" id="password" placeholder="Password" autocomplete="off">
+        <span class="erro-message">*Password name cannot be empty</span>
+
+        <button class="submit-btn">Claim your free trial</button>
+
+        <span>
+          By clicking the button, you are agreeing to our <a href="#">Terms and Services</a>
+        </span>
+
+      </form>
+
+   
+
+    </div>
+  </main>
+</body>
+
+</html>

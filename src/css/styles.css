@@ -1,0 +1,128 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    min-height: 100vh;
+    background: hsl(0, 100%, 74%) url(../images/bg-intro-desktop.png);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1440px;
+}
+
+.container .info {
+    color: hsl(246, 25%, 77%);
+    padding: 2.5rem;
+}
+
+.container .info .title {
+    font-size: 4rem;
+    max-width: 400px;
+    line-height: 4rem;
+    margin-bottom: 3rem;
+}
+
+.container .info .description {
+    max-width: 500px;
+}
+
+.container .form .form-title {
+    background-color: hsl(248, 32%, 49%);
+    color: hsl(246, 25%, 77%);
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: .9rem;
+    box-shadow: 1px 10px 5px #0000006b;
+    margin-bottom: 3rem;
+}
+
+.container .form .form-title strong {
+    font-weight: 700;
+    color: white;
+}
+
+.container .form form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 1px 8px 8px #0000006b;
+}
+
+.container .form form input,
+.container .form .submit-btn {
+    padding: 1rem;
+    max-width: 90%;
+    width: 400px;
+    margin:0 auto 1rem;
+    border: 1px solid hsl(246, 25%, 77%);
+    border-radius: 5px;
+}
+
+.container .form form input::placeholder {
+    font-weight: 700;
+}
+
+.container .form form input:focus-visible {
+    border: 1px solid hsl(249, 10%, 26%);
+    outline: none;
+}
+
+.container .form form input:nth-child(1) {
+    margin-top: 3rem;
+}
+
+.container .form .submit-btn {
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 1.2rem;
+    border-bottom: 3px solid hsl(154, 53%, 38%);
+    transition: 0.3s;
+    
+}
+
+.container .form .submit-btn:hover {
+    opacity: 0.8;
+}
+
+.container .form span {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    color: hsl(246, 25%, 77%);
+    font-weight: 600;
+}
+
+.container .form a {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+
+.container .form form .erro-message {
+    color: red;
+    text-align: end;
+    margin-right: 2.5rem;
+    visibility: hidden;
+}
+
+.container .form form input.erro-validation {
+    border: 2px solid red;
+    background: url(../images/icon-error.svg) no-repeat;
+    background-position: right 1.5rem top 5px;
+    
+}
